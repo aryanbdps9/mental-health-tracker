@@ -1,0 +1,651 @@
+{
+  "id": "xfutni0s",
+  "title": "ASRS ADHD",
+  "description": "How have you felt and conducted yourself recently?",
+  "recall_period": "recently",
+  "original_recall_period": "6 months",
+  "display_order": 4,
+  "scoring": {
+    "method": "threshold_count",
+    "screener_questions": [
+      "sln1saug",
+      "w2v0ov0w",
+      "3s52olmj",
+      "6tfbhyk9",
+      "492myroy",
+      "lv0vxe97"
+    ],
+    "thresholds": {
+      "sln1saug": 2,
+      "w2v0ov0w": 2,
+      "3s52olmj": 2,
+      "6tfbhyk9": 3,
+      "492myroy": 3,
+      "lv0vxe97": 3
+    },
+    "positive_count": 4,
+    "positive_label": "Highly consistent with ADHD in adults",
+    "negative_label": "Below screening threshold"
+  },
+  "questions": [
+    {
+      "id": "sln1saug",
+      "section": "Part A (Screener)",
+      "text": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "aqjymzd2"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "8m4a42cb"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "i54ap7g7"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "90hkacvc"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "12olujrt"
+        }
+      ]
+    },
+    {
+      "id": "w2v0ov0w",
+      "section": "Part A (Screener)",
+      "text": "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "o9ym0u1x"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "22sc8itj"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "oet7jcaq"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "6l0v10l9"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "tguvdixq"
+        }
+      ]
+    },
+    {
+      "id": "3s52olmj",
+      "section": "Part A (Screener)",
+      "text": "How often do you have problems remembering appointments or obligations?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "2n160z66"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "552ex9rm"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "31la3ylr"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "9adtykmp"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "wumajdi8"
+        }
+      ]
+    },
+    {
+      "id": "6tfbhyk9",
+      "section": "Part A (Screener)",
+      "text": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "r5387lmw"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "e0aj3grc"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "1745e4ip"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "3k9hv8mp"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "3pkn2m1u"
+        }
+      ]
+    },
+    {
+      "id": "492myroy",
+      "section": "Part A (Screener)",
+      "text": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "iyzw5w6p"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "vzup2uk5"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "ben1j1o8"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "7tfq0r5h"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "55qljqf5"
+        }
+      ]
+    },
+    {
+      "id": "lv0vxe97",
+      "section": "Part A (Screener)",
+      "text": "How often do you feel overly active and compelled to do things, like you were driven by a motor?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "659koikc"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "r581bjfm"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "twjucjaq"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "519kp0fb"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "wlb10y0r"
+        }
+      ]
+    },
+    {
+      "id": "xns63gu6",
+      "section": "Part B",
+      "text": "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "etft352m"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "l26omto8"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "yqa2g8ut"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "s8hua4mn"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "ngtjmj3y"
+        }
+      ]
+    },
+    {
+      "id": "gje2jw3w",
+      "section": "Part B",
+      "text": "How often do you have difficulty keeping your attention when you are doing boring or repetitive work?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "lvcbcuzg"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "cfb9s986"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "egtfxh4e"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "o6b2fqb4"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "qjd7jxcm"
+        }
+      ]
+    },
+    {
+      "id": "2nfbeibw",
+      "section": "Part B",
+      "text": "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "38tohnbq"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "zy7qxvf2"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "3ejkv4iv"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "bjc6y7sh"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "h3a07ct7"
+        }
+      ]
+    },
+    {
+      "id": "tylb6cyx",
+      "section": "Part B",
+      "text": "How often do you misplace or have difficulty finding things at home or at work?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "uksu7qk5"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "xs2f0vve"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "sc3ck42s"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "adhx3z17"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "1bybivhu"
+        }
+      ]
+    },
+    {
+      "id": "pyic7pad",
+      "section": "Part B",
+      "text": "How often are you distracted by activity or noise around you?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "6xmrp8qr"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "e0axa8br"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "j6f0etch"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "p2y5n805"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "4v0yhkyv"
+        }
+      ]
+    },
+    {
+      "id": "eb2bnk7g",
+      "section": "Part B",
+      "text": "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "cgftde3c"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "w6y98n4g"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "a1z3nw9k"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "3o9wih1e"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "9gll26s1"
+        }
+      ]
+    },
+    {
+      "id": "fziaptjj",
+      "section": "Part B",
+      "text": "How often do you feel restless or fidgety?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "kyx7dch9"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "kfxhwwxf"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "5prh59be"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "60nbp9ka"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "ime5vtpo"
+        }
+      ]
+    },
+    {
+      "id": "xuly7qx3",
+      "section": "Part B",
+      "text": "How often do you have difficulty unwinding and relaxing when you have time to yourself?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "74kgelcw"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "c9obrvfy"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "43zzdw3e"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "3iq0b09y"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "3c1ejgc6"
+        }
+      ]
+    },
+    {
+      "id": "ox9zx4vk",
+      "section": "Part B",
+      "text": "How often do you find yourself talking too much when you are in social situations?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "7p02us15"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "gkw8mgas"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "xjp5g93j"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "kwjl7g01"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "j2pq7xhg"
+        }
+      ]
+    },
+    {
+      "id": "12sp4akn",
+      "section": "Part B",
+      "text": "When you're in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "y1bn2xwb"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "cc1nlojd"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "fbf1tfhw"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "gi0eo7qi"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "6qm7he15"
+        }
+      ]
+    },
+    {
+      "id": "tvobgwed",
+      "section": "Part B",
+      "text": "How often do you have difficulty waiting your turn in situations when turn taking is required?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "0ik6epr3"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "k9tfic8x"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "48gd1oe4"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "zafa3018"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "knrocm71"
+        }
+      ]
+    },
+    {
+      "id": "uva2bzza",
+      "section": "Part B",
+      "text": "How often do you interrupt others when they are busy?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Never",
+          "value": 0,
+          "id": "9s2npxf5"
+        },
+        {
+          "label": "Rarely",
+          "value": 1,
+          "id": "ims4ocdc"
+        },
+        {
+          "label": "Sometimes",
+          "value": 2,
+          "id": "j2uuopd4"
+        },
+        {
+          "label": "Often",
+          "value": 3,
+          "id": "66mf5sql"
+        },
+        {
+          "label": "Very Often",
+          "value": 4,
+          "id": "r0ohijil"
+        }
+      ]
+    },
+    {
+      "id": "zedvoe5i",
+      "section": "Notes",
+      "text": "Any additional notes or context you want to record?",
+      "type": "text",
+      "scored": false
+    }
+  ]
+}

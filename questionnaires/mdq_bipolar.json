@@ -1,0 +1,357 @@
+{
+  "id": "jqr7vyxw",
+  "title": "MDQ Bipolar",
+  "description": "Has there been a period of time when you were not your usual self and...",
+  "recall_period": "recently",
+  "original_recall_period": "lifetime",
+  "display_order": 5,
+  "scoring": {
+    "method": "multi_criteria",
+    "criteria": [
+      {
+        "id": "symptom_count",
+        "type": "count_yes",
+        "questions": [
+          "b94lvi4y",
+          "lpuprrai",
+          "rbgh1axk",
+          "8kinteee",
+          "qcj3tdyg",
+          "jth086qo",
+          "kyu9ptaf",
+          "62n0mei8",
+          "mhng5lmi",
+          "jnlj5h5n",
+          "pd3l77e5",
+          "bqwf7lqd",
+          "3ot5frtg"
+        ],
+        "min_count": 7,
+        "label": "7+ symptoms endorsed"
+      },
+      {
+        "id": "co_occurrence",
+        "type": "equals",
+        "question": "uqqgyqj2",
+        "value": "ncttyktz",
+        "label": "Symptoms co-occurred"
+      },
+      {
+        "id": "impact",
+        "type": "in",
+        "question": "njvgwlfp",
+        "values": [
+          "moderate",
+          "serious"
+        ],
+        "label": "Moderate or serious impact"
+      }
+    ],
+    "all_met_label": "Positive screen - further assessment for bipolar disorder warranted",
+    "not_met_label": "Negative screen"
+  },
+  "questions": [
+    {
+      "id": "b94lvi4y",
+      "section": "Symptoms",
+      "text": "...you felt so good or so hyper that other people thought you were not your normal self, or you were so hyper that you got into trouble?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "otrtcif2"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "tesix03u"
+        }
+      ]
+    },
+    {
+      "id": "lpuprrai",
+      "section": "Symptoms",
+      "text": "...you were so irritable that you shouted at people or started fights or arguments?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "dt08i8mz"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "s2c1z82q"
+        }
+      ]
+    },
+    {
+      "id": "rbgh1axk",
+      "section": "Symptoms",
+      "text": "...you felt much more self-confident than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "0yd7kgti"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "w33pqs1l"
+        }
+      ]
+    },
+    {
+      "id": "8kinteee",
+      "section": "Symptoms",
+      "text": "...you got much less sleep than usual and found you didn’t really miss it?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "bk7af5zt"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "f38kf1ia"
+        }
+      ]
+    },
+    {
+      "id": "qcj3tdyg",
+      "section": "Symptoms",
+      "text": "...you were much more talkative or spoke faster than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "gmdwcmam"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "8ij8gw2j"
+        }
+      ]
+    },
+    {
+      "id": "jth086qo",
+      "section": "Symptoms",
+      "text": "...thoughts raced through your head or you couldn’t slow your mind down?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "n709xawc"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "ufj2am6e"
+        }
+      ]
+    },
+    {
+      "id": "kyu9ptaf",
+      "section": "Symptoms",
+      "text": "...you were so easily distracted by things around you that you had trouble concentrating or staying on track?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "vkrtvksx"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "aihoiqj0"
+        }
+      ]
+    },
+    {
+      "id": "62n0mei8",
+      "section": "Symptoms",
+      "text": "...you had much more energy than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "41n63qe9"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "kg0s7vtr"
+        }
+      ]
+    },
+    {
+      "id": "mhng5lmi",
+      "section": "Symptoms",
+      "text": "...you were much more active or did many more things than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "gpdr328j"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "56xj46qb"
+        }
+      ]
+    },
+    {
+      "id": "jnlj5h5n",
+      "section": "Symptoms",
+      "text": "...you were much more social or outgoing than usual (e.g., telephoning friends in the middle of the night)?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "m8tuju7e"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "10l4n50w"
+        }
+      ]
+    },
+    {
+      "id": "pd3l77e5",
+      "section": "Symptoms",
+      "text": "...you were much more interested in sex than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "was2qame"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "i063bhoj"
+        }
+      ]
+    },
+    {
+      "id": "bqwf7lqd",
+      "section": "Symptoms",
+      "text": "...you did things that were unusual for you or that other people might have thought were excessive, foolish, or risky?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "p24ga041"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "rf4dndjq"
+        }
+      ]
+    },
+    {
+      "id": "3ot5frtg",
+      "section": "Symptoms",
+      "text": "...spending money got you or your family in trouble?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "8bulpcu0"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "txdymsuz"
+        }
+      ]
+    },
+    {
+      "id": "uqqgyqj2",
+      "section": "Co-occurrence",
+      "text": "If you answered Yes to more than one of the above, have several of these ever happened during the same period of time?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "ncttyktz"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "pv6idrxh"
+        }
+      ]
+    },
+    {
+      "id": "njvgwlfp",
+      "section": "Impact",
+      "text": "How much of a problem did any of these cause you - like being able to work; having family, money, or legal troubles; getting into arguments or fights?",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "No problem",
+          "value": "none",
+          "id": "x76jr5zn"
+        },
+        {
+          "label": "Minor problem",
+          "value": "minor",
+          "id": "k0v19vs6"
+        },
+        {
+          "label": "Moderate problem",
+          "value": "moderate",
+          "id": "980b00bq"
+        },
+        {
+          "label": "Serious problem",
+          "value": "serious",
+          "id": "646mlrgn"
+        }
+      ]
+    },
+    {
+      "id": "2swvrj2l",
+      "section": "Notes",
+      "text": "Any additional notes or context you want to record?",
+      "type": "text",
+      "scored": false
+    }
+  ]
+}

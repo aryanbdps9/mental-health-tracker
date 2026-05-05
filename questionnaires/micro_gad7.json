@@ -1,0 +1,43 @@
+{
+  "id": "nnr1y9rd",
+  "title": "Micro GAD-7",
+  "description": "Quick anxiety check-in since your last submission",
+  "recall_period": "since last check-in",
+  "display_order": 11,
+  "micro": true,
+  "reconstructs": {
+    "questionnaire_id": "whnyk2ov",
+    "recall_days": 14,
+    "method": "weighted_pct_to_likert_v1"
+  },
+  "scoring": {
+    "method": "sum",
+    "scored_questions": ["net4e16n","okpaomcu","b7mae4i8","8x9nn0lj","etap7ksw","61an4pox","5z3c3zid"],
+    "ranges": [
+      {"min": 0, "max": 50, "label": "Low"},
+      {"min": 51, "max": 175, "label": "Moderate"},
+      {"min": 176, "max": 350, "label": "Elevated"},
+      {"min": 351, "max": 700, "label": "High"}
+    ]
+  },
+  "answer_links": [],
+  "questions": [
+    {"id": "net4e16n", "section": "Symptoms", "text": "Feeling nervous, anxious, or on edge", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "okpaomcu", "section": "Symptoms", "text": "Not being able to stop or control worrying", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "b7mae4i8", "section": "Symptoms", "text": "Worrying too much about different things", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "8x9nn0lj", "section": "Symptoms", "text": "Trouble relaxing", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "etap7ksw", "section": "Symptoms", "text": "Being so restless it's hard to sit still", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "61an4pox", "section": "Symptoms", "text": "Becoming easily annoyed or irritable", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "5z3c3zid", "section": "Symptoms", "text": "Feeling afraid, as if something awful might happen", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {
+      "id": "ktrratth", "section": "Impact", "text": "How much did these problems get in the way?",
+      "type": "single_choice", "scored": false,
+      "options": [
+        {"id": "ycdt7gco", "value": 0, "label": "Not at all"},
+        {"id": "50has38f", "value": 1, "label": "A little"},
+        {"id": "napkk6it", "value": 2, "label": "A lot"},
+        {"id": "fmd1i3zm", "value": 3, "label": "Couldn't function"}
+      ]
+    }
+  ]
+}

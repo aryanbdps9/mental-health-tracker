@@ -1,0 +1,374 @@
+{
+  "id": "aguqu2kg",
+  "title": "PHQ-9 Depression",
+  "description": "Over the last 2 weeks, how often have you been bothered by the following problems?",
+  "recall_period": "2 weeks",
+  "display_order": 1,
+  "scoring": {
+    "method": "sum",
+    "scored_questions": [
+      "jjvql3gv",
+      "2y0w7871",
+      "p440gqmw",
+      "m8jt8nme",
+      "75ivx6a8",
+      "fckw4fbd",
+      "itv7gbsc",
+      "fp0l2rum",
+      "71d6lsay"
+    ],
+    "ranges": [
+      {
+        "min": 0,
+        "max": 4,
+        "label": "Minimal depression"
+      },
+      {
+        "min": 5,
+        "max": 9,
+        "label": "Mild depression"
+      },
+      {
+        "min": 10,
+        "max": 14,
+        "label": "Moderate depression"
+      },
+      {
+        "min": 15,
+        "max": 19,
+        "label": "Moderately severe depression"
+      },
+      {
+        "min": 20,
+        "max": 27,
+        "label": "Severe depression"
+      }
+    ]
+  },
+  "answer_links": [
+    {
+      "description": "Q9=Not at all → C-SSRS Q1 should be No",
+      "source": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "values": ["65ewj33n"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "tsrg3ww6", "compatible": ["904hkvor"]}
+    },
+    {
+      "description": "Q9=Several days or worse → C-SSRS Q1 should be Yes",
+      "source": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "values": ["zwnmpk0q", "31yptzo7", "geiz534f"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "tsrg3ww6", "compatible": ["17veltgy"]}
+    },
+    {
+      "description": "Q9=Several days → SI frequency ≤ several times/week",
+      "source": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "values": ["zwnmpk0q"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "compatible": ["zx784pk8", "qr1mrcen", "a0xh0pv1"]}
+    },
+    {
+      "description": "Q9=More than half the days → SI frequency several/week or daily",
+      "source": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "values": ["31yptzo7"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "compatible": ["a0xh0pv1", "ys2z9kpe"]}
+    },
+    {
+      "description": "Q9=Nearly every day → SI frequency several/week or more",
+      "source": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "values": ["geiz534f"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "compatible": ["a0xh0pv1", "ys2z9kpe", "5t6e5ekm"]}
+    }
+  ],
+  "questions": [
+    {
+      "id": "jjvql3gv",
+      "section": "PHQ-9",
+      "text": "Little interest or pleasure in doing things",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "hc6ss2ym"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "4gtl3299"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "cm7zabtb"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "b9buro3c"
+        }
+      ]
+    },
+    {
+      "id": "2y0w7871",
+      "section": "PHQ-9",
+      "text": "Feeling down, depressed, or hopeless",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "h59pxk6c"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "g3n768t2"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "5dgjqkvp"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "j7baho7a"
+        }
+      ]
+    },
+    {
+      "id": "p440gqmw",
+      "section": "PHQ-9",
+      "text": "Trouble falling or staying asleep, or sleeping too much",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "f565yirt"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "efegx7n7"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "pdyg7g7b"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "icwhqce6"
+        }
+      ]
+    },
+    {
+      "id": "m8jt8nme",
+      "section": "PHQ-9",
+      "text": "Feeling tired or having little energy",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "qjfpyiue"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "al26n15l"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "ljqp3n6l"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "ck0wuj3i"
+        }
+      ]
+    },
+    {
+      "id": "75ivx6a8",
+      "section": "PHQ-9",
+      "text": "Poor appetite or overeating",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "hvyotuut"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "5lk5v72j"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "0o58gtxk"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "bifqyf42"
+        }
+      ]
+    },
+    {
+      "id": "fckw4fbd",
+      "section": "PHQ-9",
+      "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "7catyghu"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "g1xeab42"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "qdnsx574"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "bdh9ie3e"
+        }
+      ]
+    },
+    {
+      "id": "itv7gbsc",
+      "section": "PHQ-9",
+      "text": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "72amgy2y"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "9qewijd2"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "mpdlrmx8"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "z5qon2pb"
+        }
+      ]
+    },
+    {
+      "id": "fp0l2rum",
+      "section": "PHQ-9",
+      "text": "Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "0j2ydkeb"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "24x1agx4"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "hpowzev1"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "0u7lod5z"
+        }
+      ]
+    },
+    {
+      "id": "71d6lsay",
+      "section": "PHQ-9",
+      "text": "Thoughts that you would be better off dead or of hurting yourself in some way",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "65ewj33n"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "zwnmpk0q"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "31yptzo7"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "geiz534f"
+        }
+      ]
+    },
+    {
+      "id": "w9zj52wb",
+      "section": "Functional Impact",
+      "text": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+      "type": "single_choice",
+      "scored": false,
+      "options": [
+        {
+          "label": "Not difficult at all",
+          "value": 0,
+          "id": "adxslj9u"
+        },
+        {
+          "label": "Somewhat difficult",
+          "value": 1,
+          "id": "ic1ov75d"
+        },
+        {
+          "label": "Very difficult",
+          "value": 2,
+          "id": "qtsdz0rw"
+        },
+        {
+          "label": "Extremely difficult",
+          "value": 3,
+          "id": "2swtmf4v"
+        }
+      ]
+    },
+    {
+      "id": "hi8fv0ah",
+      "section": "Notes",
+      "text": "Any additional notes or context you want to record?",
+      "type": "text",
+      "scored": false
+    }
+  ]
+}

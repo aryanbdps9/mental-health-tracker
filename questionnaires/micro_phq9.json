@@ -1,0 +1,56 @@
+{
+  "id": "hrq04yc6",
+  "title": "Micro PHQ-9",
+  "description": "Quick depression check-in since your last submission",
+  "recall_period": "since last check-in",
+  "display_order": 10,
+  "micro": true,
+  "reconstructs": {
+    "questionnaire_id": "aguqu2kg",
+    "recall_days": 14,
+    "method": "weighted_pct_to_likert_v1"
+  },
+  "scoring": {
+    "method": "sum",
+    "scored_questions": ["qowzhofm","s0uztjz2","h70byl15","0odgwyo2","thch485e","z3o84xuq","99ol0p1c","ahjln5wj","9cs718pj"],
+    "ranges": [
+      {"min": 0, "max": 50, "label": "Low"},
+      {"min": 51, "max": 200, "label": "Moderate"},
+      {"min": 201, "max": 450, "label": "Elevated"},
+      {"min": 451, "max": 900, "label": "High"}
+    ]
+  },
+  "answer_links": [
+    {
+      "description": "Q9 slider=0 → Micro C-SSRS Q1 should be No",
+      "source": {"questionnaire": "hrq04yc6", "question": "9cs718pj", "match_method": "zero_nonzero_v1", "match_args": {"when": "zero"}},
+      "target": {"questionnaire": "ajfeavyf", "question": "h5e46x5r", "compatible": ["secjcqq0"]}
+    },
+    {
+      "description": "Q9 slider>0 → Micro C-SSRS Q1 should be Yes",
+      "source": {"questionnaire": "hrq04yc6", "question": "9cs718pj", "match_method": "zero_nonzero_v1", "match_args": {"when": "nonzero"}},
+      "target": {"questionnaire": "ajfeavyf", "question": "h5e46x5r", "compatible": ["xbyyi3h2"]}
+    }
+  ],
+  "questions": [
+    {"id": "qowzhofm", "section": "Symptoms", "text": "Little interest or pleasure in doing things", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "s0uztjz2", "section": "Symptoms", "text": "Feeling down, depressed, or hopeless", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "h70byl15", "section": "Symptoms", "text": "Trouble with sleep (falling asleep, staying asleep, or sleeping too much)", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "0odgwyo2", "section": "Symptoms", "text": "Feeling tired or low energy", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "thch485e", "section": "Symptoms", "text": "Poor appetite or overeating", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "z3o84xuq", "section": "Symptoms", "text": "Feeling bad about yourself, or that you've let people down", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "99ol0p1c", "section": "Symptoms", "text": "Trouble concentrating (reading, watching TV, conversations)", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "ahjln5wj", "section": "Symptoms", "text": "Noticeably slowed down or unusually fidgety/restless", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {"id": "9cs718pj", "section": "Symptoms", "text": "Thoughts of being better off dead, or of hurting yourself", "type": "slider", "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12}, "scored": true},
+    {
+      "id": "k4lg8t9l", "section": "Impact", "text": "How much did these problems get in the way?",
+      "type": "single_choice", "scored": false,
+      "options": [
+        {"id": "4zsqz0tb", "value": 0, "label": "Not at all"},
+        {"id": "s3ggar2a", "value": 1, "label": "A little"},
+        {"id": "1ump6mq7", "value": 2, "label": "A lot"},
+        {"id": "dpco8f0j", "value": 3, "label": "Couldn't function"}
+      ]
+    }
+  ]
+}

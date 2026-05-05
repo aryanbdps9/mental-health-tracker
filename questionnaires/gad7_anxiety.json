@@ -1,0 +1,282 @@
+{
+  "id": "whnyk2ov",
+  "title": "GAD-7 Anxiety",
+  "description": "Over the last 2 weeks, how often have you been bothered by the following problems?",
+  "recall_period": "2 weeks",
+  "display_order": 2,
+  "scoring": {
+    "method": "sum",
+    "scored_questions": [
+      "ao0i3d1g",
+      "qafizx2k",
+      "h7hmw0wr",
+      "0km50npc",
+      "pcux852d",
+      "tweb8i37",
+      "qbwkef25"
+    ],
+    "ranges": [
+      {
+        "min": 0,
+        "max": 4,
+        "label": "Minimal anxiety"
+      },
+      {
+        "min": 5,
+        "max": 9,
+        "label": "Mild anxiety"
+      },
+      {
+        "min": 10,
+        "max": 14,
+        "label": "Moderate anxiety"
+      },
+      {
+        "min": 15,
+        "max": 21,
+        "label": "Severe anxiety"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "ao0i3d1g",
+      "section": "GAD-7",
+      "text": "Feeling nervous, anxious, or on edge",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "vnxyy95f"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "v3btzhtk"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "yh0afjk1"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "bbio4ujk"
+        }
+      ]
+    },
+    {
+      "id": "qafizx2k",
+      "section": "GAD-7",
+      "text": "Not being able to stop or control worrying",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "rj95q3xq"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "sm7onju9"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "dptcde0c"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "9zyar7px"
+        }
+      ]
+    },
+    {
+      "id": "h7hmw0wr",
+      "section": "GAD-7",
+      "text": "Worrying too much about different things",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "txjz9zvy"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "jehtbjpx"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "blev3qrf"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "rgjn8qhb"
+        }
+      ]
+    },
+    {
+      "id": "0km50npc",
+      "section": "GAD-7",
+      "text": "Trouble relaxing",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "xiu3ephz"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "9zmuzh7x"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "80k8g6mb"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "1rko9zo9"
+        }
+      ]
+    },
+    {
+      "id": "pcux852d",
+      "section": "GAD-7",
+      "text": "Being so restless that it is hard to sit still",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "9usbpdpk"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "t5m9dd6x"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "ts3f7770"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "1auu047l"
+        }
+      ]
+    },
+    {
+      "id": "tweb8i37",
+      "section": "GAD-7",
+      "text": "Becoming easily annoyed or irritable",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "l01fq90e"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "dygwvqli"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "qhmsnrjj"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "87c1y1f9"
+        }
+      ]
+    },
+    {
+      "id": "qbwkef25",
+      "section": "GAD-7",
+      "text": "Feeling afraid, as if something awful might happen",
+      "type": "single_choice",
+      "scored": true,
+      "options": [
+        {
+          "label": "Not at all",
+          "value": 0,
+          "id": "8fb3rtnl"
+        },
+        {
+          "label": "Several days",
+          "value": 1,
+          "id": "om0dfbyp"
+        },
+        {
+          "label": "More than half the days",
+          "value": 2,
+          "id": "guafqjvc"
+        },
+        {
+          "label": "Nearly every day",
+          "value": 3,
+          "id": "iodccein"
+        }
+      ]
+    },
+    {
+      "id": "1qn4nioi",
+      "section": "Functional Impact",
+      "text": "If you checked off any problems, how difficult have they made it for you to do your work, take care of things at home, or get along with other people?",
+      "type": "single_choice",
+      "scored": false,
+      "options": [
+        {
+          "label": "Not difficult at all",
+          "value": 0,
+          "id": "ddmhuovm"
+        },
+        {
+          "label": "Somewhat difficult",
+          "value": 1,
+          "id": "pny7bu7f"
+        },
+        {
+          "label": "Very difficult",
+          "value": 2,
+          "id": "j9qo7yaf"
+        },
+        {
+          "label": "Extremely difficult",
+          "value": 3,
+          "id": "kqkm7qfl"
+        }
+      ]
+    },
+    {
+      "id": "xvjsiach",
+      "section": "Notes",
+      "text": "Any additional notes or context you want to record?",
+      "type": "text",
+      "scored": false
+    }
+  ]
+}

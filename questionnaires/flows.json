@@ -1,0 +1,42 @@
+{
+  "flows": [
+    {
+      "id": "daily",
+      "title": "Full Check-in",
+      "description": "Complete full questionnaires in one session",
+      "questionnaire_order": [
+        "aguqu2kg",
+        "vd5vesbs",
+        "whnyk2ov",
+        "xfutni0s",
+        "jqr7vyxw"
+      ],
+      "ordering_constraints": [
+        {
+          "before": "aguqu2kg",
+          "after": "vd5vesbs",
+          "reason": "SI questionnaire should come after depression screening"
+        }
+      ]
+    },
+    {
+      "id": "micro",
+      "title": "Quick Check-in",
+      "description": "Short check-in since your last submission",
+      "questionnaire_order": [
+        "hrq04yc6",
+        "ajfeavyf",
+        "nnr1y9rd",
+        "hwi1ma4p",
+        "32tz1ic8"
+      ],
+      "ordering_constraints": [
+        {
+          "before": "hrq04yc6",
+          "after": "ajfeavyf",
+          "reason": "SI check should come after depression check"
+        }
+      ]
+    }
+  ]
+}

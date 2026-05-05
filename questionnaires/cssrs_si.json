@@ -1,0 +1,340 @@
+{
+  "id": "vd5vesbs",
+  "title": "C-SSRS Suicidal Ideation",
+  "description": "Questions about thoughts and feelings related to suicide. Uses therapist (SpringHealth) wording where available.",
+  "recall_period": "since last visit",
+  "display_order": 3,
+  "scoring": {
+    "method": "categorical",
+    "ideation_questions": [
+      "tsrg3ww6",
+      "qwi2a4ao",
+      "xgbkfrnd",
+      "c15bze2a",
+      "8y4hzxzy"
+    ],
+    "ideation_labels": {
+      "0": "No ideation",
+      "1": "Wish to be dead",
+      "2": "Non-specific active suicidal thoughts",
+      "3": "Active ideation with methods",
+      "4": "Active ideation with intent",
+      "5": "Active ideation with plan and intent"
+    },
+    "frequency_question": "q2xemw3o",
+    "protective_question": "bp9m9apq",
+    "behavior_question": "x1awoy0t"
+  },
+  "answer_links": [
+    {
+      "description": "Q1=No → Q2 should be No",
+      "source": {"questionnaire": "vd5vesbs", "question": "tsrg3ww6", "values": ["904hkvor"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "compatible": ["et6l3oem"]}
+    },
+    {
+      "description": "Q2=Yes → Q1 should be Yes",
+      "source": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "values": ["zaxirhjw"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "tsrg3ww6", "compatible": ["17veltgy"]}
+    },
+    {
+      "description": "Q2=No → Q3 should be No",
+      "source": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "values": ["et6l3oem"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "xgbkfrnd", "compatible": ["l47m0939"]}
+    },
+    {
+      "description": "Q3=Yes → Q2 should be Yes",
+      "source": {"questionnaire": "vd5vesbs", "question": "xgbkfrnd", "values": ["e54puahq"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "compatible": ["zaxirhjw"]}
+    },
+    {
+      "description": "Q2=No → Q4 should be No",
+      "source": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "values": ["et6l3oem"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "c15bze2a", "compatible": ["i7io6k27"]}
+    },
+    {
+      "description": "Q4=Yes → Q2 should be Yes",
+      "source": {"questionnaire": "vd5vesbs", "question": "c15bze2a", "values": ["pzcm8m27"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "compatible": ["zaxirhjw"]}
+    },
+    {
+      "description": "Q2=No → Q5 should be No",
+      "source": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "values": ["et6l3oem"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "8y4hzxzy", "compatible": ["1mibfe9n"]}
+    },
+    {
+      "description": "Q5=Yes → Q2 should be Yes",
+      "source": {"questionnaire": "vd5vesbs", "question": "8y4hzxzy", "values": ["6sxwi9se"]},
+      "target": {"questionnaire": "vd5vesbs", "question": "qwi2a4ao", "compatible": ["zaxirhjw"]}
+    },
+    {
+      "description": "Q1=No → PHQ-9 Q9 should be Not at all",
+      "source": {"questionnaire": "vd5vesbs", "question": "tsrg3ww6", "values": ["904hkvor"]},
+      "target": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "compatible": ["65ewj33n"]}
+    },
+    {
+      "description": "Q1=Yes → PHQ-9 Q9 should be Several days or worse",
+      "source": {"questionnaire": "vd5vesbs", "question": "tsrg3ww6", "values": ["17veltgy"]},
+      "target": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "compatible": ["zwnmpk0q", "31yptzo7", "geiz534f"]}
+    },
+    {
+      "description": "SI frequency < weekly or weekly → PHQ-9 Q9 should be Several days",
+      "source": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "values": ["zx784pk8", "qr1mrcen"]},
+      "target": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "compatible": ["zwnmpk0q"]}
+    },
+    {
+      "description": "SI frequency several/week → PHQ-9 Q9 should be Several days or more",
+      "source": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "values": ["a0xh0pv1"]},
+      "target": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "compatible": ["zwnmpk0q", "31yptzo7", "geiz534f"]}
+    },
+    {
+      "description": "SI frequency daily → PHQ-9 Q9 should be More than half or Nearly every day",
+      "source": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "values": ["ys2z9kpe"]},
+      "target": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "compatible": ["31yptzo7", "geiz534f"]}
+    },
+    {
+      "description": "SI frequency multiple daily → PHQ-9 Q9 should be Nearly every day",
+      "source": {"questionnaire": "vd5vesbs", "question": "q2xemw3o", "values": ["5t6e5ekm"]},
+      "target": {"questionnaire": "aguqu2kg", "question": "71d6lsay", "compatible": ["geiz534f"]}
+    }
+  ],
+  "questions": [
+    {
+      "id": "tsrg3ww6",
+      "section": "Suicidal Ideation",
+      "text": "Have you wished you were dead or wished you could go to sleep and never wake up?",
+      "description": "Wish to be Dead: thoughts about a wish to be dead or not alive anymore, or wish to fall asleep and not wake up.",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "17veltgy"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "904hkvor"
+        }
+      ]
+    },
+    {
+      "id": "qwi2a4ao",
+      "section": "Suicidal Ideation",
+      "text": "Have you actually had any thoughts of killing yourself?",
+      "description": "Non-Specific Active Suicidal Thoughts: general thoughts of wanting to end one's life without thoughts of methods, intent, or plan.",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "zaxirhjw"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "et6l3oem"
+        }
+      ]
+    },
+    {
+      "id": "xgbkfrnd",
+      "section": "Suicidal Ideation",
+      "text": "Have you been thinking about how you might kill yourself?",
+      "description": "Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act.",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "e54puahq"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "l47m0939"
+        }
+      ]
+    },
+    {
+      "id": "c15bze2a",
+      "section": "Suicidal Ideation",
+      "text": "Have you had these thoughts and had some intention of acting on them?",
+      "description": "Active Suicidal Ideation with Some Intent to Act, without Specific Plan.",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "pzcm8m27"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "i7io6k27"
+        }
+      ]
+    },
+    {
+      "id": "8y4hzxzy",
+      "section": "Suicidal Ideation",
+      "text": "Have you started to work out or worked out the details of how to kill yourself? Do you intend to carry out this plan?",
+      "description": "Active Suicidal Ideation with Specific Plan and Intent.",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "6sxwi9se"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "1mibfe9n"
+        }
+      ]
+    },
+    {
+      "id": "q2xemw3o",
+      "section": "Intensity of Ideation",
+      "text": "How often do you have these suicidal thoughts?",
+      "type": "single_choice",
+      "scored": false,
+      "show_if": {
+        "any_of": [
+          {
+            "question": "tsrg3ww6",
+            "equals": "17veltgy"
+          },
+          {
+            "question": "qwi2a4ao",
+            "equals": "zaxirhjw"
+          }
+        ]
+      },
+      "options": [
+        {
+          "label": "Less than once a week",
+          "value": "less_than_weekly",
+          "id": "zx784pk8"
+        },
+        {
+          "label": "Once a week",
+          "value": "weekly",
+          "id": "qr1mrcen"
+        },
+        {
+          "label": "2–5 times a week",
+          "value": "several_weekly",
+          "id": "a0xh0pv1"
+        },
+        {
+          "label": "Daily or almost daily",
+          "value": "daily",
+          "id": "ys2z9kpe"
+        },
+        {
+          "label": "Many times each day",
+          "value": "multiple_daily",
+          "id": "5t6e5ekm"
+        }
+      ]
+    },
+    {
+      "id": "bp9m9apq",
+      "section": "Intensity of Ideation",
+      "text": "What things help you in not acting on thoughts to kill yourself? (select all that apply)",
+      "type": "multi_choice",
+      "scored": false,
+      "show_if": {
+        "any_of": [
+          {
+            "question": "tsrg3ww6",
+            "equals": "17veltgy"
+          },
+          {
+            "question": "qwi2a4ao",
+            "equals": "zaxirhjw"
+          }
+        ]
+      },
+      "options": [
+        {
+          "label": "Faith / Religion",
+          "value": "faith",
+          "id": "ibpqfkyz"
+        },
+        {
+          "label": "Family",
+          "value": "family",
+          "id": "6i6l7ng1"
+        },
+        {
+          "label": "Fear of failing",
+          "value": "fear_of_failing",
+          "id": "icjy9tsr"
+        },
+        {
+          "label": "Hope for future",
+          "value": "hope",
+          "id": "elv448mn"
+        },
+        {
+          "label": "Other",
+          "value": "other",
+          "id": "pxgdqfna"
+        }
+      ]
+    },
+    {
+      "id": "x1awoy0t",
+      "section": "Suicidal Behavior",
+      "text": "Have you done anything, started to do anything, or prepared to do anything to end your life?",
+      "description": "Includes actual attempts, interrupted attempts, aborted attempts, and preparatory acts.",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "i3lx8av3"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "08i75dfs"
+        }
+      ]
+    },
+    {
+      "id": "dw8qzndj",
+      "section": "Suicidal Behavior",
+      "text": "Have you engaged in non-suicidal self-injurious behavior (hurting yourself on purpose without wanting to die)?",
+      "type": "yes_no",
+      "scored": false,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "id": "wlhgfss5"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "id": "rr8c6lle"
+        }
+      ]
+    },
+    {
+      "id": "akh6ohkr",
+      "section": "Notes",
+      "text": "Any additional notes or context you want to record?",
+      "type": "text",
+      "scored": false
+    }
+  ]
+}

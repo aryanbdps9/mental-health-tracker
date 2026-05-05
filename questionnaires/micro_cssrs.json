@@ -1,0 +1,141 @@
+{
+  "id": "ajfeavyf",
+  "title": "Micro C-SSRS",
+  "description": "Quick suicidal ideation check-in since your last submission",
+  "recall_period": "since last check-in",
+  "display_order": 12,
+  "micro": true,
+  "reconstructs": {
+    "questionnaire_id": "vd5vesbs",
+    "recall_days": 14,
+    "method": "categorical_ideation_v1"
+  },
+  "scoring": {
+    "method": "categorical",
+    "ideation_questions": ["h5e46x5r", "srjfg4m6", "5r3rgh8a", "cnjnhi82", "b8i1uvmt"],
+    "ideation_labels": {
+      "0": "No ideation",
+      "1": "Wish to be dead",
+      "2": "Active suicidal thoughts",
+      "3": "Ideation with methods",
+      "4": "Ideation with intent",
+      "5": "Ideation with plan"
+    },
+    "frequency_question": "hemghdf6",
+    "behavior_question": "btd8d503",
+    "protective_question": ""
+  },
+  "answer_links": [
+    {
+      "description": "Q1=No → Q2 should be No",
+      "source": {"questionnaire": "ajfeavyf", "question": "h5e46x5r", "values": ["secjcqq0"]},
+      "target": {"questionnaire": "ajfeavyf", "question": "srjfg4m6", "compatible": ["3jdtqb36"]}
+    },
+    {
+      "description": "Q2=Yes → Q1 should be Yes",
+      "source": {"questionnaire": "ajfeavyf", "question": "srjfg4m6", "values": ["24ssci6f"]},
+      "target": {"questionnaire": "ajfeavyf", "question": "h5e46x5r", "compatible": ["xbyyi3h2"]}
+    },
+    {
+      "description": "Q2=No → Q3 should be No",
+      "source": {"questionnaire": "ajfeavyf", "question": "srjfg4m6", "values": ["3jdtqb36"]},
+      "target": {"questionnaire": "ajfeavyf", "question": "5r3rgh8a", "compatible": ["70ve4rh5"]}
+    },
+    {
+      "description": "Q2=No → Q4 should be No",
+      "source": {"questionnaire": "ajfeavyf", "question": "srjfg4m6", "values": ["3jdtqb36"]},
+      "target": {"questionnaire": "ajfeavyf", "question": "cnjnhi82", "compatible": ["uxg1wvxk"]}
+    },
+    {
+      "description": "Q2=No → Q5 should be No",
+      "source": {"questionnaire": "ajfeavyf", "question": "srjfg4m6", "values": ["3jdtqb36"]},
+      "target": {"questionnaire": "ajfeavyf", "question": "b8i1uvmt", "compatible": ["qfyeb9bo"]}
+    },
+    {
+      "description": "Q1=No → Micro PHQ-9 Q9 should be zero",
+      "source": {"questionnaire": "ajfeavyf", "question": "h5e46x5r", "values": ["secjcqq0"]},
+      "target": {"questionnaire": "hrq04yc6", "question": "9cs718pj", "match_method": "zero_nonzero_v1", "match_args": {"when": "zero"}}
+    },
+    {
+      "description": "Q1=Yes → Micro PHQ-9 Q9 should be nonzero",
+      "source": {"questionnaire": "ajfeavyf", "question": "h5e46x5r", "values": ["xbyyi3h2"]},
+      "target": {"questionnaire": "hrq04yc6", "question": "9cs718pj", "match_method": "zero_nonzero_v1", "match_args": {"when": "nonzero"}}
+    }
+  ],
+  "questions": [
+    {
+      "id": "h5e46x5r", "section": "Suicidal Ideation",
+      "text": "Did you wish you were dead or wish you could go to sleep and not wake up?",
+      "type": "yes_no", "scored": true,
+      "options": [
+        {"id": "xbyyi3h2", "value": "yes", "label": "Yes"},
+        {"id": "secjcqq0", "value": "no", "label": "No"}
+      ]
+    },
+    {
+      "id": "srjfg4m6", "section": "Suicidal Ideation",
+      "text": "Did you have any thoughts of killing yourself?",
+      "type": "yes_no", "scored": true,
+      "options": [
+        {"id": "24ssci6f", "value": "yes", "label": "Yes"},
+        {"id": "3jdtqb36", "value": "no", "label": "No"}
+      ]
+    },
+    {
+      "id": "5r3rgh8a", "section": "Suicidal Ideation",
+      "text": "Did you think about how you might do it?",
+      "type": "yes_no", "scored": true,
+      "show_if": {"question": "srjfg4m6", "equals": "24ssci6f"},
+      "options": [
+        {"id": "14vtn1kt", "value": "yes", "label": "Yes"},
+        {"id": "70ve4rh5", "value": "no", "label": "No"}
+      ]
+    },
+    {
+      "id": "cnjnhi82", "section": "Suicidal Ideation",
+      "text": "Did you have some intention of acting on those thoughts?",
+      "type": "yes_no", "scored": true,
+      "show_if": {"question": "srjfg4m6", "equals": "24ssci6f"},
+      "options": [
+        {"id": "gtr11xek", "value": "yes", "label": "Yes"},
+        {"id": "uxg1wvxk", "value": "no", "label": "No"}
+      ]
+    },
+    {
+      "id": "b8i1uvmt", "section": "Suicidal Ideation",
+      "text": "Did you work out details of a plan?",
+      "type": "yes_no", "scored": true,
+      "show_if": {"question": "srjfg4m6", "equals": "24ssci6f"},
+      "options": [
+        {"id": "4fonv5vh", "value": "yes", "label": "Yes"},
+        {"id": "qfyeb9bo", "value": "no", "label": "No"}
+      ]
+    },
+    {
+      "id": "hemghdf6", "section": "Intensity",
+      "text": "How much of the time were these thoughts present?",
+      "type": "slider",
+      "slider": {"min": 0, "max": 100, "unit": "percent_of_period", "least_count_hours": 12},
+      "scored": false,
+      "show_if": {"any_of": [{"question": "h5e46x5r", "equals": "xbyyi3h2"}, {"question": "srjfg4m6", "equals": "24ssci6f"}]}
+    },
+    {
+      "id": "btd8d503", "section": "Behavior",
+      "text": "Did you do anything, start to do anything, or prepare to do anything to end your life?",
+      "type": "yes_no", "scored": true,
+      "options": [
+        {"id": "w7omk343", "value": "yes", "label": "Yes"},
+        {"id": "144tk2mb", "value": "no", "label": "No"}
+      ]
+    },
+    {
+      "id": "8p1g4q0z", "section": "Behavior",
+      "text": "Did you hurt yourself on purpose (without wanting to die)?",
+      "type": "yes_no", "scored": false,
+      "options": [
+        {"id": "zikjqpmh", "value": "yes", "label": "Yes"},
+        {"id": "w7omk343x", "value": "no", "label": "No"}
+      ]
+    }
+  ]
+}

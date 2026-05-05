@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Tracker - Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .login-container {
+            max-width: 360px;
+            margin: 80px auto;
+            padding: 32px;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+        .login-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .login-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .login-input {
+            width: 100%;
+            padding: 12px 14px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: var(--font);
+            font-size: 1rem;
+            color: var(--text);
+            background: var(--bg);
+            margin-bottom: 16px;
+        }
+        .login-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .login-error {
+            color: var(--danger);
+            font-size: 0.85rem;
+            text-align: center;
+            margin-bottom: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-title">🧠 Mental Health Tracker</div>
+        <div class="login-subtitle">Enter your password to continue</div>
+        <div class="login-error" id="error">Wrong password</div>
+        <form onsubmit="doLogin(event)">
+            <input type="password" class="login-input" id="password"
+                   placeholder="Password" autofocus autocomplete="current-password">
+            <button type="submit" class="btn btn-primary btn-block">Unlock</button>
+        </form>
+    </div>
+    <script>
+    async function doLogin(e) {
+        e.preventDefault();
+        const pw = document.getElementById('password').value;
+        const errEl = document.getElementById('error');
+        errEl.style.display = 'none';
+        try {
+            const res = await fetch('/login', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({password: pw}),
+            });
+            if (res.ok) {
+                window.location.reload();
+            } else {
+                errEl.style.display = 'block';
+                document.getElementById('password').select();
+            }
+        } catch (err) {
+            errEl.textContent = 'Connection failed';
+            errEl.style.display = 'block';
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+{
+  "id": "hwi1ma4p",
+  "title": "Micro ASRS",
+  "description": "Quick ADHD check-in since your last submission",
+  "recall_period": "since last check-in",
+  "display_order": 13,
+  "micro": true,
+  "reconstructs": {
+    "questionnaire_id": "xfutni0s",
+    "recall_days": 183,
+    "method": "weighted_pct_to_5point_v1"
+  },
+  "scoring": {
+    "method": "sum",
+    "scored_questions": [
+      "axmyuqxg",
+      "j61chpfv",
+      "9al1qam1",
+      "8mls8089",
+      "fuh0qcwc",
+      "pvsd3fz7",
+      "7rfx3ce1",
+      "wctmp6gx",
+      "qii8shf3",
+      "lhcinwhj",
+      "e4uvdyn5",
+      "lbgi9sc5",
+      "86spwy2y",
+      "d9dpkakk",
+      "skuj2wg6",
+      "8rqwyhof",
+      "ouwmnmaw",
+      "qfnpxbuq"
+    ],
+    "ranges": [
+      {
+        "min": 0,
+        "max": 200,
+        "label": "Low"
+      },
+      {
+        "min": 201,
+        "max": 600,
+        "label": "Moderate"
+      },
+      {
+        "min": 601,
+        "max": 1200,
+        "label": "Elevated"
+      },
+      {
+        "min": 1201,
+        "max": 1800,
+        "label": "High"
+      }
+    ]
+  },
+  "answer_links": [],
+  "questions": [
+    {
+      "id": "axmyuqxg",
+      "section": "Part A",
+      "text": "Trouble wrapping up final details of a project",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "j61chpfv",
+      "section": "Part A",
+      "text": "Difficulty getting things in order for an organized task",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "9al1qam1",
+      "section": "Part A",
+      "text": "Problems remembering appointments or obligations",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "8mls8089",
+      "section": "Part A",
+      "text": "Avoiding or delaying tasks that require a lot of thought",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "fuh0qcwc",
+      "section": "Part A",
+      "text": "Fidgeting or squirming when sitting for a long time",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "pvsd3fz7",
+      "section": "Part A",
+      "text": "Feeling overly active or driven, like a motor",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "7rfx3ce1",
+      "section": "Part B",
+      "text": "Careless mistakes on boring or difficult work",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "wctmp6gx",
+      "section": "Part B",
+      "text": "Difficulty keeping attention on boring/repetitive work",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "qii8shf3",
+      "section": "Part B",
+      "text": "Difficulty concentrating on what people say to you",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "lhcinwhj",
+      "section": "Part B",
+      "text": "Misplacing or losing things",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "e4uvdyn5",
+      "section": "Part B",
+      "text": "Distracted by activity or noise around you",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "lbgi9sc5",
+      "section": "Part B",
+      "text": "Leaving your seat when expected to remain seated",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "86spwy2y",
+      "section": "Part B",
+      "text": "Feeling restless or fidgety",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "d9dpkakk",
+      "section": "Part B",
+      "text": "Difficulty unwinding and relaxing",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "skuj2wg6",
+      "section": "Part B",
+      "text": "Talking too much in social situations",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "8rqwyhof",
+      "section": "Part B",
+      "text": "Finishing other people's sentences",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "ouwmnmaw",
+      "section": "Part B",
+      "text": "Difficulty waiting your turn",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    },
+    {
+      "id": "qfnpxbuq",
+      "section": "Part B",
+      "text": "Interrupting others when they're busy",
+      "type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "unit": "percent_of_period",
+        "least_count_hours": 12
+      },
+      "scored": true
+    }
+  ]
+}

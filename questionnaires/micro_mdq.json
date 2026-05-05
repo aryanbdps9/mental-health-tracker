@@ -1,0 +1,468 @@
+{
+  "id": "32tz1ic8",
+  "title": "Micro MDQ",
+  "description": "Quick bipolar screening check-in since your last submission",
+  "recall_period": "since last check-in",
+  "display_order": 14,
+  "micro": true,
+  "reconstructs": {
+    "questionnaire_id": "jqr7vyxw",
+    "recall_days": 9999,
+    "method": "episodic_cluster_v1"
+  },
+  "scoring": {
+    "method": "multi_criteria",
+    "criteria": [
+      {
+        "id": "symptom_count",
+        "type": "count_yes",
+        "questions": [
+          "b875k87y",
+          "jrvefy1m",
+          "dw7kiq5u",
+          "htta9grp",
+          "uktjuui2",
+          "1kf28h98",
+          "py4qyn1q",
+          "u5hwgc4y",
+          "3io2da81",
+          "dwud87hc",
+          "d3f8fzbg",
+          "cq971jzt",
+          "f16kuaf9"
+        ],
+        "min_count": 7,
+        "label": "7+ symptoms endorsed"
+      },
+      {
+        "id": "co_occurrence",
+        "type": "equals",
+        "question": "3upmax2f",
+        "value": "ks5c2e35",
+        "label": "Symptoms co-occurred"
+      },
+      {
+        "id": "impact",
+        "type": "in",
+        "question": "pbcd0h4r",
+        "values": [
+          "0v6c6djg",
+          "mbwy1442"
+        ],
+        "label": "Moderate or serious impact"
+      }
+    ],
+    "all_met_label": "Positive screen",
+    "not_met_label": "Negative screen"
+  },
+  "answer_links": [],
+  "questions": [
+    {
+      "id": "b875k87y",
+      "section": "Symptoms",
+      "text": "Did you feel so good or hyper that others noticed, or you got into trouble?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "s7di2ffq",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "0ipv8f2f",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "jrvefy1m",
+      "section": "Symptoms",
+      "text": "Were you so irritable you shouted at people or started arguments?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "ps75z65q",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "mwx7btbj",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "dw7kiq5u",
+      "section": "Symptoms",
+      "text": "Did you feel much more self-confident than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "a56rbz5n",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "ikszuczn",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "htta9grp",
+      "section": "Symptoms",
+      "text": "Did you get much less sleep than usual and not miss it?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "h3deefye",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "mvqnpmfu",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "uktjuui2",
+      "section": "Symptoms",
+      "text": "Were you much more talkative or speaking faster than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "dznf0gno",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "pg6rvgi4",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "1kf28h98",
+      "section": "Symptoms",
+      "text": "Were thoughts racing or couldn't slow your mind?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "8p0h4cm0",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "oq4vxli2",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "py4qyn1q",
+      "section": "Symptoms",
+      "text": "Were you so distracted you had trouble focusing?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "yvf5qnol",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "muriywxv",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "u5hwgc4y",
+      "section": "Symptoms",
+      "text": "Did you have much more energy than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "u5javqow",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "np6isapr",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "3io2da81",
+      "section": "Symptoms",
+      "text": "Were you much more active than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "6hm3vxzb",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "ycltqabm",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "dwud87hc",
+      "section": "Symptoms",
+      "text": "Were you much more social or outgoing than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "gid6bihu",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "apbxonqb",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "d3f8fzbg",
+      "section": "Symptoms",
+      "text": "Were you much more interested in sex than usual?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "3brc5ah6",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "tl9ofz1g",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "cq971jzt",
+      "section": "Symptoms",
+      "text": "Did you do things others might think were excessive, foolish, or risky?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "3g8y5xi8",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "4kiu6158",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "f16kuaf9",
+      "section": "Symptoms",
+      "text": "Did spending money cause problems?",
+      "type": "yes_no",
+      "scored": true,
+      "options": [
+        {
+          "id": "qfvx6n5w",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "hu5ckd1u",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "3upmax2f",
+      "section": "Co-occurrence",
+      "text": "Were several of these happening at the same time?",
+      "type": "yes_no",
+      "scored": true,
+      "show_if": {
+        "any_of": [
+          {
+            "question": "b875k87y",
+            "equals": "s7di2ffq"
+          },
+          {
+            "question": "jrvefy1m",
+            "equals": "ps75z65q"
+          },
+          {
+            "question": "dw7kiq5u",
+            "equals": "a56rbz5n"
+          },
+          {
+            "question": "htta9grp",
+            "equals": "h3deefye"
+          },
+          {
+            "question": "uktjuui2",
+            "equals": "dznf0gno"
+          },
+          {
+            "question": "1kf28h98",
+            "equals": "8p0h4cm0"
+          },
+          {
+            "question": "py4qyn1q",
+            "equals": "yvf5qnol"
+          },
+          {
+            "question": "u5hwgc4y",
+            "equals": "u5javqow"
+          },
+          {
+            "question": "3io2da81",
+            "equals": "6hm3vxzb"
+          },
+          {
+            "question": "dwud87hc",
+            "equals": "gid6bihu"
+          },
+          {
+            "question": "d3f8fzbg",
+            "equals": "3brc5ah6"
+          },
+          {
+            "question": "cq971jzt",
+            "equals": "3g8y5xi8"
+          },
+          {
+            "question": "f16kuaf9",
+            "equals": "qfvx6n5w"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "ks5c2e35",
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "id": "69q968h3",
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "pbcd0h4r",
+      "section": "Impact",
+      "text": "How much of a problem did they cause?",
+      "type": "single_choice",
+      "scored": true,
+      "show_if": {
+        "any_of": [
+          {
+            "question": "b875k87y",
+            "equals": "s7di2ffq"
+          },
+          {
+            "question": "jrvefy1m",
+            "equals": "ps75z65q"
+          },
+          {
+            "question": "dw7kiq5u",
+            "equals": "a56rbz5n"
+          },
+          {
+            "question": "htta9grp",
+            "equals": "h3deefye"
+          },
+          {
+            "question": "uktjuui2",
+            "equals": "dznf0gno"
+          },
+          {
+            "question": "1kf28h98",
+            "equals": "8p0h4cm0"
+          },
+          {
+            "question": "py4qyn1q",
+            "equals": "yvf5qnol"
+          },
+          {
+            "question": "u5hwgc4y",
+            "equals": "u5javqow"
+          },
+          {
+            "question": "3io2da81",
+            "equals": "6hm3vxzb"
+          },
+          {
+            "question": "dwud87hc",
+            "equals": "gid6bihu"
+          },
+          {
+            "question": "d3f8fzbg",
+            "equals": "3brc5ah6"
+          },
+          {
+            "question": "cq971jzt",
+            "equals": "3g8y5xi8"
+          },
+          {
+            "question": "f16kuaf9",
+            "equals": "qfvx6n5w"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "4inlhs3u",
+          "value": "none",
+          "label": "No problem"
+        },
+        {
+          "id": "wb2j023d",
+          "value": "minor",
+          "label": "Minor problem"
+        },
+        {
+          "id": "0v6c6djg",
+          "value": "moderate",
+          "label": "Moderate problem"
+        },
+        {
+          "id": "mbwy1442",
+          "value": "serious",
+          "label": "Serious problem"
+        }
+      ]
+    }
+  ]
+}
